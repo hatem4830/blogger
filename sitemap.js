@@ -176,7 +176,7 @@ function sortPosts(sortBy) {
    }
 } // end sortPosts
 
-// displaying the toc
+// the toc
 
 function displayToc(filter) {
 // this function creates a three-column table and adds it to the screen
@@ -233,9 +233,9 @@ function displayToc(filter) {
    }
    tocTable += '</table>';
    if (numDisplayed == postTitle.length) {
-      var tocNote = '<span class="toc-note">Displaying all ' + postTitle.length + ' posts<br/></span>'; }
+      var tocNote = '<span class="toc-note">عرض ' + postTitle.length + ' موضوع<br/></span>'; }
    else {
-      var tocNote = '<span class="toc-note">Displaying ' + numDisplayed + ' posts labeled \'';
+      var tocNote = '<span class="toc-note">عرض ' + numDisplayed + ' موضوع \'';
       tocNote += postFilter + '\' of '+ postTitle.length + ' posts total<br/></span>';
    }
    tocdiv.innerHTML = tocNote + tocTable;
